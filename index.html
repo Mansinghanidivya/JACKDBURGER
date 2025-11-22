@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack-Dburger - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon"><img src="uploads/WhatsApp_Image_2025-11-19_at_21.14.50-removebg-preview.png" height="40px" width="60px"></div>
+                        <span class="logo-text">Jack-D-Burger</span>
+                    </a>
+                </div>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <a href="menu.html">Menu</a>
+                    <a href="nutrition.html">Nutrition</a>
+                    <a href="farm-to-fork.html">Farm to Fork</a>
+                    <div class="dropdown">
+                        <a href="careers.html">Careers <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="careers.html#people">Our People</a>
+                            <a href="careers.html#values">Core Values</a>
+                            <a href="careers.html#working">Working Here</a>
+                            <a href="careers.html#join">Join the team</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="convenience.html">Convenience <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="convenience.html#mcdelivery">OurDelivery</a>
+                            <a href="convenience.html#kiosk">Dessert Kiosk</a>
+                            <a href="convenience.html#drive-thru">Drive Thru</a>
+                        </div>
+                    </div>
+                    <a href="birthday-party.html">B'day Party</a>
+                    <div class="dropdown">
+                        <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="about.html#story">Our Story</a>
+                            <a href="about.html#care">We Care</a>
+                            <a href="about.html#milestone">Milestones</a>
+                            <a href="about.html#awards">Awards</a>
+                        </div>
+                    </div>
+                    <a href="reach-us.html">Reach Us</a>
+                </nav>
+                
+                <button class="order-btn">Order Now</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Carousel -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=1200" alt="Gourmet Burgers">
+                <div class="carousel-content">
+                    <h1>New Gourmet Burgers</h1>
+                    <p>Experience premium taste</p>
+                    <a href="menu.html" class="btn-primary">Order Now</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="uploads/WhatsApp Image 2025-11-19 at 21.55.47.jpeg" alt="McSaver Combos">
+                <div class="carousel-content">
+                    <h1>Healthy Burger</h1>
+                    <p>Starting at ₹79</p>
+                    <a href="menu.html" class="btn-primary">Order Now</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="uploads/WhatsApp Image 2025-11-19 at 21.55.47 (1).jpeg" alt="McDelivery">
+                <div class="carousel-content">
+                    <h1>Order on Jack-D-Burger</h1>
+                    <p>Fast & contactless delivery</p>
+                    <a href="menu.html" class="btn-primary">Order Now</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200" alt="McAloo Tikki">
+                <div class="carousel-content">
+                    <h1>Jack-D-Burger</h1>
+                    <p>India's Healthiest @ ₹79</p>
+                    <a href="menu.html" class="btn-primary">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn prev" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn next" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3>Order Online</h3>
+                    <p>Quick and easy online ordering</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Contactless McDelivery to your door</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Quality Food</h3>
+                    <p>Fresh ingredients, great taste</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu -->
+    <section class="featured-menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Favorites</h2>
+                <p>Discover our most loved menu items</p>
+            </div>
+            <div class="menu-grid" id="featuredItems"></div>
+            <div class="text-center">
+                <a href="menu.html" class="btn-primary">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- McDelivery Banner -->
+    <section class="mcdelivery-banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h2>Get it delivered with JAckDelivery</h2>
+                    <p>Enjoy your favorite Healthy meals delivered right to your doorstep. Safe, fast, and contactless delivery available.</p>
+                    <button class="btn-red">Order Now</button>
+                </div>
+                <div class="banner-image">
+                    <img src="https://images.unsplash.com/photo-1585238341710-4a85ff3199ba?w=600" alt="McDelivery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Party Section -->
+    <section class="birthday-section">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-image">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600" alt="Birthday Party">
+                </div>
+                <div class="banner-text">
+                    <h2>Celebrate at Jack-D-Burger</h2>
+                    <p>Make your child's birthday memorable with a fun-filled party at Healthiest Jack-D-Burger. Enjoy special party packages, games, and delicious food!</p>
+                    <a href="birthday-party.html" class="btn-red">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="app-download">
+            <div class="container">
+                <div class="download-content">
+                    <div>
+                        <h3>Download the Jack-D-Burger's App</h3>
+                        <p>Order food, get exclusive deals, and earn rewards</p>
+                    </div>
+                    <div class="app-buttons">
+                        <button class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <div>
+                                <small>GET IT ON</small>
+                                <strong>Google Play</strong>
+                            </div>
+                        </button>
+                        <button class="app-btn">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <small>Download on the</small>
+                                <strong>App Store</strong>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4>About Jack-D-Burger's</h4>
+                        <ul>
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="about.html#milestone">Milestones</a></li>
+                            <li><a href="about.html#awards">Awards</a></li>
+                            <li><a href="farm-to-fork.html">Farm to Fork</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="convenience.html#mcdelivery">McDelivery</a></li>
+                            <li><a href="convenience.html#drive-thru">Drive Thru</a></li>
+                            <li><a href="convenience.html#kiosk">Dessert Kiosk</a></li>
+                            <li><a href="birthday-party.html">Birthday Parties</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="nutrition.html">Nutrition</a></li>
+                            <li><a href="reach-us.html">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="wifi-info">
+                            <i class="fas fa-wifi"></i>
+                            <span>Free WiFi Available</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        © 2024 Jack-D-Burger's India. All Rights Reserved.
+                    </div>
+                    <div class="footer-links">
+                        <a href="#">Terms & Conditions</a>
+                        <span>|</span>
+                        <a href="#">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="#">Site Map</a>
+                        <span>|</span>
+                        <a href="#">Media Centre</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

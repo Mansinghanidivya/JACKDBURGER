@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack-D-Burger - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon"><img src="uploads/WhatsApp_Image_2025-11-19_at_21.14.50-removebg-preview.png" height="40px" width="60px"></div>
+                        <span class="logo-text">Jack-D-Burger</span>
+                    </a>
+                </div>
+                
+                
+                <nav class="nav-menu" id="navMenu">
+                    <a href="menu.html">Menu</a>
+                    <a href="nutrition.html">Nutrition</a>
+                    <a href="farm-to-fork.html">Farm to Fork</a>
+                    <div class="dropdown">
+                        <a href="careers.html">Careers <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="careers.html#people">Our People</a>
+                            <a href="careers.html#values">Core Values</a>
+                            <a href="careers.html#working">Working Here</a>
+                            <a href="careers.html#join">Join the team</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="convenience.html">Convenience <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="convenience.html#mcdelivery">OurDelivery</a>
+                            <a href="convenience.html#kiosk">Dessert Kiosk</a>
+                            <a href="convenience.html#drive-thru">Drive Thru</a>
+                        </div>
+                    </div>
+                    <a href="birthday-party.html">B'day Party</a>
+                    <div class="dropdown">
+                        <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="about.html#story">Our Story</a>
+                            <a href="about.html#care">We Care</a>
+                            <a href="about.html#milestone">Milestones</a>
+                            <a href="about.html#awards">Awards</a>
+                        </div>
+                    </div>
+                    <a href="reach-us.html">Reach Us</a>
+                </nav>
+                
+                <button class="order-btn">Order Now</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Discover our delicious range of burgers, sides, and more!</p>
+        </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <div class="category-tabs-wrapper">
+        <div class="container">
+            <div class="category-tabs" id="categoryTabs">
+                <button class="tab-btn active" onclick="filterMenu('burgers')">Burgers</button>
+                <button class="tab-btn" onclick="filterMenu('sides')">Sides</button>
+                <button class="tab-btn" onclick="filterMenu('beverages')">Beverages</button>
+                <button class="tab-btn" onclick="filterMenu('desserts')">Desserts</button>
+                <button class="tab-btn" onclick="filterMenu('combos')">Combos</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Items -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-grid" id="menuGrid"></div>
+        </div>
+    </section>
+
+    <!-- Cart Float -->
+    <div class="cart-float" id="cartFloat" style="display: none;">
+        <div class="cart-badge" id="cartCount">0</div>
+        <span>Items in cart</span>
+        <button class="btn-yellow">View Cart</button>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="app-download">
+            <div class="container">
+                <div class="download-content">
+                    <div>
+                        <h3>Download the McDonald's App</h3>
+                        <p>Order food, get exclusive deals, and earn rewards</p>
+                    </div>
+                    <div class="app-buttons">
+                        <button class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <div>
+                                <small>GET IT ON</small>
+                                <strong>Google Play</strong>
+                            </div>
+                        </button>
+                        <button class="app-btn">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <small>Download on the</small>
+                                <strong>App Store</strong>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4>About McDonald's</h4>
+                        <ul>
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="about.html#milestone">Milestones</a></li>
+                            <li><a href="about.html#awards">Awards</a></li>
+                            <li><a href="farm-to-fork.html">Farm to Fork</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="convenience.html#mcdelivery">McDelivery</a></li>
+                            <li><a href="convenience.html#drive-thru">Drive Thru</a></li>
+                            <li><a href="convenience.html#kiosk">Dessert Kiosk</a></li>
+                            <li><a href="birthday-party.html">Birthday Parties</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="nutrition.html">Nutrition</a></li>
+                            <li><a href="reach-us.html">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="wifi-info">
+                            <i class="fas fa-wifi"></i>
+                            <span>Free WiFi Available</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        © 2024 McDonald's India. All Rights Reserved.
+                    </div>
+                    <div class="footer-links">
+                        <a href="#">Terms & Conditions</a>
+                        <span>|</span>
+                        <a href="#">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="#">Site Map</a>
+                        <span>|</span>
+                        <a href="#">Media Centre</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu-script.js"></script>
+</body>
+</html>

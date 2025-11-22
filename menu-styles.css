@@ -1,0 +1,110 @@
+.page-hero {
+    background: linear-gradient(135deg, #DA291C, #ff4433);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    font-size: 22px;
+}
+
+.category-tabs-wrapper {
+    background: white;
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.category-tabs {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+    overflow-x: auto;
+}
+
+.tab-btn {
+    padding: 12px 30px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    background: #e0e0e0;
+}
+
+.tab-btn.active {
+    background: #DA291C;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(218, 41, 28, 0.3);
+}
+
+.menu-section {
+    padding: 60px 0;
+    background: #f8f8f8;
+}
+
+.cart-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.cart-badge {
+    background: #DA291C;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.btn-yellow {
+    background: #FFC72C;
+    color: #333;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-yellow:hover {
+    background: #ffb700;
+}
+
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 36px;
+    }
+    
+    .cart-float {
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 20px;
+    }
+}
